@@ -4,40 +4,6 @@
 
 #include "include/complex_number.h"
 
-TEST(Frolov_Gleb_ComplexNumberTest, getRe) {
-  double re = 1.0;
-  double im = 5.0;
-  ComplexNumber cn1(re, im);
-
-  EXPECT_EQ(cn1.getRe(), 1.0);
-}
-
-TEST(Frolov_Gleb_ComplexNumberTest, setRe) {
-  double re = 1.0;
-  double im = 5.0;
-  ComplexNumber cn1(re, im);
-  cn1.setRe(2.0);
-
-  EXPECT_EQ(cn1.getRe(), 2.0);
-}
-
-TEST(Frolov_Gleb_ComplexNumberTest, getIm) {
-  double re = 1.0;
-  double im = 5.0;
-  ComplexNumber cn1(re, im);
-
-  EXPECT_EQ(cn1.getIm(), 5.0);
-}
-
-TEST(Frolov_Gleb_ComplexNumberTest, setIm) {
-  double re = 1.0;
-  double im = 5.0;
-  ComplexNumber cn1(re, im);
-  cn1.setIm(4.0);
-
-  EXPECT_EQ(cn1.getIm(), 4.0);
-}
-
 TEST(Frolov_Gleb_ComplexNumberTest, Init_Constructor_Positive_Num) {
   double re = 2.0;
   double im = 5.0;
