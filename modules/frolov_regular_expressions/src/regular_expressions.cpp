@@ -1,5 +1,6 @@
 // Copyright 2022 Frolov Gleb
 
+#include <string>
 #include "include/regular_expressions.h"
 
 Text_for_regexp::Text_for_regexp() { text = ""; }
