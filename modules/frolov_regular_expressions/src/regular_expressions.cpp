@@ -29,13 +29,14 @@ std::string Text_for_regexp::Search_for_regexp(std::string regexp) {
       count = end_i - begin_i - 1;
       if (begin_i == 0) {
         result_str.append(text, begin_i, count);
-      }
-      else result_str.append(text, begin_i + 1, count);
+      } else { result_str.append(text, begin_i + 1, count); }
       result_str.push_back('|');
       i = end_i + 1;
+    } else {
+        if (i == 0) return "Not found";
+        else
+          break;
     }
-    else if (i == 0) return "Not found";
-    else break;
   }
   result_str.erase(result_str.length() - 1);
   return result_str;

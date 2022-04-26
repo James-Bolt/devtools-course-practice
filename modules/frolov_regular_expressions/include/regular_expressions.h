@@ -2,17 +2,17 @@
 
 #include <string>
 
-#ifndef MODULES_FROLOV_GLEB_REGULAR_EXPRESSIONS_INCLUDE_REGULAR_EXPRESSIONS_H_
-#define MODULES_FROLOV_GLEB_REGULAR_EXPRESSIONS_INCLUDE_REGULAR_EXPRESSIONS_H_
+#ifndef MODULES_FROLOV_REGULAR_EXPRESSIONS_INCLUDE_REGULAR_EXPRESSIONS_H_
+#define MODULES_FROLOV_REGULAR_EXPRESSIONS_INCLUDE_REGULAR_EXPRESSIONS_H_
 
 class Text_for_regexp {
-private:
+ private:
   std::string text;
-public:
+ public:
   Text_for_regexp();
-  Text_for_regexp(std::string _text);
+  explicit Text_for_regexp(std::string _text);
   std::string Get_text();
   std::string Search_for_regexp(std::string regexp);
 };
 
-#endif  // MODULES_FROLOV_GLEB_REGULAR_EXPRESSIONS_INCLUDE_REGULAR_EXPRESSIONS_H_
+#endif  // MODULES_FROLOV_REGULAR_EXPRESSIONS_INCLUDE_REGULAR_EXPRESSIONS_H_
