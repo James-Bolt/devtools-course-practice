@@ -1,7 +1,7 @@
 // Copyright 2022 Frolov Gleb
 
 #include <string>
-#include "./include/regular_expressions.h"
+#include "include/regular_expressions.h"
 
 Text_for_regexp::Text_for_regexp() { text = ""; }
 Text_for_regexp::Text_for_regexp(std::string _text) { text = _text; }
