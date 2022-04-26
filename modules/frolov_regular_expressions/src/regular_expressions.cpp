@@ -11,9 +11,10 @@ std::string Text_for_regexp::Search_for_regexp(std::string regexp) {
   std::string result_str;
 
   for (int i = 0; i < text.length();) {
-    int begin_i, end_i, count, true_i;
+    int true_i;
     true_i = text.find(regexp, i);
     if (true_i != std::string::npos) {
+      int begin_i, end_i, count;
       begin_i = text.rfind(' ', true_i);
       if (begin_i == std::string::npos) {
         begin_i = -1;
