@@ -1,16 +1,11 @@
 // Copyright 2022 Frolov Gleb
 
 #include <string>
-#include "include/regular_expressions.h"
+#include "./include/regular_expressions.h"
 
 Text_for_regexp::Text_for_regexp() { text = ""; }
 Text_for_regexp::Text_for_regexp(std::string _text) { text = _text; }
 std::string Text_for_regexp::Get_text() { return text; }
-
-/*
-0123456789
-qwer tyui asdf ghjk
-*/
 
 std::string Text_for_regexp::Search_for_regexp(std::string regexp) {
   std::string result_str;
