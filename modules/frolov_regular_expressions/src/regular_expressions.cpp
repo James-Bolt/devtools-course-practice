@@ -10,17 +10,17 @@ std::string Text_for_regexp::Get_text() { return text; }
 std::string Text_for_regexp::Search_for_regexp(std::string regexp) {
   std::string result_str;
 
-  for (int i = 0; i < text.length();) {
+  for (int i = 0; i < static_cast<int>(text.length());) {
     int true_i;
     true_i = text.find(regexp, i);
-    if (true_i != std::string::npos) {
+    if (true_i != static_cast<int>(std::string::npos)) {
       int begin_i, end_i, count;
       begin_i = text.rfind(' ', true_i);
-      if (begin_i == std::string::npos) {
+      if (begin_i == static_cast<int>(std::string::npos)) {
         begin_i = -1;
       }
       end_i = text.find(' ', true_i);
-      if (end_i == std::string::npos) {
+      if (end_i == static_cast<int>(std::string::npos)) {
         end_i = text.length() + 1;
       }
       count = end_i - begin_i - 1;
